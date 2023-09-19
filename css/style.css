@@ -1,0 +1,226 @@
+/*      regole di formattazione     */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+menu{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --player-bg: #282828;
+    --main-bg: #141922;
+    --side-bg: #000000;
+    --main-text: #FFFFFF;
+    --sub-text: #7B7E82;
+    --selected-item: #ADFF2F;
+}
+
+
+/*          LAYOUT          */
+
+.web-app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-content{
+    flex-grow: 1;
+    display: flex;
+}
+
+.side-bar{
+    width: 230px;
+}
+
+.main__app-content{
+    flex-grow: 1;
+}
+
+.player{
+    height: 90px;
+}
+
+
+
+.title{
+    color: var(--main-text);
+}
+
+.subtitle{
+    color: var(--sub-text);
+}
+
+/*PLAYER*/
+
+.player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--player-bg);
+}
+
+.now-playing{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 0 11px;
+}
+
+.now-playing__song,
+.now-playing__my-library{
+    display: flex;
+    gap: 13px;
+}
+
+.now-playing__song-image img{
+    min-width: 42px;
+    max-width: 42px;
+    aspect-ratio: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.media-player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+}
+
+
+
+.media-player__icons{
+    display: flex;
+    line-height: 32px;
+}
+
+.media-player__side-icon{
+    padding: 0 11px;
+}
+
+.media-player__icons{
+    font-size: 22px;
+}
+
+#play-icon{
+    font-size: 32px;
+    padding: 0 21px;
+}
+
+
+.media-player__slider{
+    display: flex;
+    line-height: 38px;
+    align-items: center;
+    gap: 16px;
+}
+
+[class$=-time]{
+    font-size: 10px;
+}
+
+.slider{
+    background-color: var(--sub-text);
+    width: 250px;
+    height: 4px;
+    border-radius: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*        MEDIA QUERY       */
+
+
+/*DESKTOP*/
+@media (max-width: 1199.98px) {
+
+}
+
+
+/*BIG TABLET*/
+@media (max-width: 991.98px) {
+
+}
+
+
+/*SMALL TABLET*/
+@media (max-width: 767.98px) {
+
+}
+
+
+/*SMARTPHONE*/
+@media (max-width: 575.98px) {
+
+    /*LAYOUT*/
+    .side-bar{
+        width: 50px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*          DEBUG          */
+
+.debug .app-content{
+    background-color: tomato;
+}
+
+.debug .player{
+    background-color: forestgreen;
+    padding: 20px;
+}
+
+.debug .side-bar{
+    border: 2px solid gold;
+    padding: 20px;
+}
+
+.debug .main__app-content{
+    border: 2px solid aqua;
+    padding: 20px;
+}
