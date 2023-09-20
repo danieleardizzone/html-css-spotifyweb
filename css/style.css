@@ -70,14 +70,13 @@ body{
 
 
 
-/*          SIDEBAR           */
+/*          SIDE-BAR           */
 
 .side-bar{
     display: flex;
     flex-direction: column;
-
-
-
+    
+    font-size: 14px;
     background-color: var(--side-bg);
 }
 
@@ -110,8 +109,20 @@ body{
     gap: 8px;
 }
 
+#new-playlist{
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+#new-playlist i{
+    font-size: 38px;
+}
 
+.playlist{
+    line-height: 32px;
+}
 
 
 
